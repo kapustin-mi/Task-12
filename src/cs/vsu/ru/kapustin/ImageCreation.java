@@ -51,9 +51,8 @@ public class ImageCreation {
     private void printCircles(Point[] centres, int diameter, Graphics2D g2d) {
         diameter = (int) (diameter/2.5);
 
-        g2d.drawOval(centres[0].getX() - diameter / 2, centres[0].getY() - diameter / 2, diameter, diameter);
-        g2d.drawOval(centres[1].getX() - diameter / 2, centres[1].getY() - diameter / 2, diameter, diameter);
-        g2d.drawOval(centres[2].getX() - diameter / 2, centres[2].getY() - diameter / 2, diameter, diameter);
-        g2d.drawOval(centres[3].getX() - diameter / 2, centres[3].getY() - diameter / 2, diameter, diameter);
+        for (Point centre : centres) {
+            g2d.drawOval(centre.getX() - diameter / 2, centre.getY() - diameter / 2, diameter, diameter);
+        }
     }
 }
