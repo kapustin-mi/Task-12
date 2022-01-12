@@ -8,7 +8,7 @@ public class ErrorMessages {
         String message = null;
 
         if (errorCode == 0) {
-            message = "Unable to save image to selected file.";
+            message = "It is impossible to perform the action, because there is no picture.";
         }
         JOptionPane.showMessageDialog(null, message, "Error", JOptionPane.ERROR_MESSAGE);
     }
